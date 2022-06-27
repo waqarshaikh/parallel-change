@@ -2,7 +2,7 @@ plugins {
     id  'java'
 }
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.9
 version = '1.0'
 
 repositories {
@@ -17,3 +17,4 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+targetCompatibility = JavaVersion.VERSION_1_9

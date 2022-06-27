@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.pduda.field.ShoppingCartTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-06-23T03:04:38" hostname="DESKTOP-NSTVQQ9" time="0.024">
+<testsuite name="com.pduda.field.ShoppingCartTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-06-27T02:46:00" hostname="DESKTOP-NSTVQQ9" time="0.005">
   <properties/>
-  <testcase name="singleItem_totalPrice()" classname="com.pduda.field.ShoppingCartTest" time="0.019"/>
-  <testcase name="singleItem_numberOfProductsInTheCart()" classname="com.pduda.field.ShoppingCartTest" time="0.0"/>
-  <testcase name="singleItem_hasDiscountIfContainsAtLeastOneProductWorthAtLeast100()" classname="com.pduda.field.ShoppingCartTest" time="0.001"/>
-  <testcase name="singleItem_doesNotHaveDiscountIfContainsNoProductsWorthAtLeast100()" classname="com.pduda.field.ShoppingCartTest" time="0.001"/>
+  <testcase name="multiple_items_number_of_products_in_the_cart()" classname="com.pduda.field.ShoppingCartTest" time="0.001"/>
+  <testcase name="multiple_items_has_discount_if_contains_at_least_one_product_worth_at_least_100()" classname="com.pduda.field.ShoppingCartTest" time="0.002"/>
+  <testcase name="multiple_items_does_not_have_discount_if_contains_no_products_worth_at_least_100()" classname="com.pduda.field.ShoppingCartTest" time="0.001"/>
+  <testcase name="multiple_items_total_price()" classname="com.pduda.field.ShoppingCartTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

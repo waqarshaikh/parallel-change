@@ -5,35 +5,34 @@ import org.junit.jupiter.api.Test;
 
 class ShoppingCartTest {
 
-
     @Test
-    void singleItem_numberOfProductsInTheCart() throws Exception {
+    void multiple_items_number_of_products_in_the_cart() throws Exception {
         ShoppingCart shoppingCart = new ShoppingCart();
-        shoppingCart.add(10);
+        shoppingCart.add(new Item(10));
 
         Assertions.assertEquals(1, shoppingCart.numberOfProducts());
     }
 
     @Test
-    void singleItem_totalPrice() throws Exception {
+    void multiple_items_total_price() throws Exception {
         ShoppingCart shoppingCart = new ShoppingCart();
-        shoppingCart.add(10);
+        shoppingCart.add(new Item(10));
 
         Assertions.assertEquals(10, shoppingCart.calculateTotalPrice());
     }
 
     @Test
-    void singleItem_hasDiscountIfContainsAtLeastOneProductWorthAtLeast100() throws Exception {
+    void multiple_items_has_discount_if_contains_at_least_one_product_worth_at_least_100() throws Exception {
         ShoppingCart shoppingCart = new ShoppingCart();
-        shoppingCart.add(100);
+        shoppingCart.add(new Item(100));
 
         Assertions.assertTrue(shoppingCart.hasDiscount());
     }
 
     @Test
-    void singleItem_doesNotHaveDiscountIfContainsNoProductsWorthAtLeast100() throws Exception {
+    void multiple_items_does_not_have_discount_if_contains_no_products_worth_at_least_100() throws Exception {
         ShoppingCart shoppingCart = new ShoppingCart();
-        shoppingCart.add(99);
+        shoppingCart.add(new Item(99));
 
         Assertions.assertFalse(shoppingCart.hasDiscount());
     }
